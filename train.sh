@@ -10,4 +10,4 @@ else
   echo "warning .bashrc doesnt exist"
 fi
 cd /home/ubuntu/experiment
-/home/ubuntu/torch/install/bin/th /home/ubuntu/experiment/train.lua -gpuid -1 -data_dir data/tinyshakespeare -rnn_size 512 -num_layers 2 -dropout 0.5
+/home/ubuntu/torch/install/bin/th /home/ubuntu/experiment/train.lua -gpuid -1 -data_dir data/tinyshakespeare 
