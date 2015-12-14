@@ -24,24 +24,20 @@ AWSOptions:
   something_else: false
 
 parameters:
-  style_image:
-    type: file
+  prime_text:
+    type: string
     required: true
-    default: /home/ubuntu/experiment/examples/inputs/escher_sphere.jpg
-    flag: -style_image
-  content_image:
-    type: file
-    required: true
-    flag: -content_image
-  num_iterations:
+    default: ""
+    flag: -prime_text
+  temperature:
+    type: string
+    default: 1
+    flag: -temperature
+  length:
     type: integer
-    default: 100
-    flag: -num_iterations
-  gpu:
-    default: 0
+    default: 2000
+    flag: -length
+  seed:
     type: integer
-    flag: -gpu
-  print_iter:
-    flag: -print_iter
-    type: integer
-    default: 0
+    default: 123
+    flag: -seed
