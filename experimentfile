@@ -5,7 +5,7 @@ General:
   author: somebody@someplace.org
 
 Initialize:
-  command: ls
+  command: /home/ubuntu/experiment/train.sh
   workspace: /home/ubuntu/experiment/somatic/init
 
 Train:
