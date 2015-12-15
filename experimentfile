@@ -24,11 +24,11 @@ AWSOptions:
   something_else: false
 
 parameters:
-  prime_text:
+  primetext:
     type: string
     required: true
     default: ""
-    flag: -prime_text
+    flag: -primetext
   temperature:
     type: string
     default: 1
