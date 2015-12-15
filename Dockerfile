@@ -7,6 +7,7 @@ RUN export CUDA_TOOLKIT_ROOT_DIR="/usr/local/cuda" && /home/ubuntu/torch/install
 RUN export CUDA_TOOLKIT_ROOT_DIR="/usr/local/cuda" && /home/ubuntu/torch/install/bin/luarocks install cunn
 RUN git clone https://github.com/somaticio/char-rnn /home/ubuntu/experiment
 ADD .docker-experimentconfig /home/ubuntu/experiment/.experimentconfig
+RUN pwd;pwd
 RUN cd /home/ubuntu/somaticagent/ && git pull
 RUN cd /home/ubuntu/experiment && git pull #use this to force an update
 RUN python /home/ubuntu/somaticagent/web.py -i
