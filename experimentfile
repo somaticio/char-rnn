@@ -30,7 +30,7 @@ parameters:
     default: ""
     flag: -primetext
   temperature:
-    type: string
+    type: integer
     default: 1
     flag: -temperature
   length:
