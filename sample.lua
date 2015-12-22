@@ -93,7 +93,7 @@ local ivocab = {}
 for c,i in pairs(vocab) do ivocab[i] = c end
 
 -- initialize the rnn state to all zeros
-gprint('creating an ' .. checkpoint.opt.model .. '...')
+--gprint('creating an ' .. checkpoint.opt.model .. '...')
 local current_state
 current_state = {}
 for L = 1,checkpoint.opt.num_layers do
@@ -111,8 +111,8 @@ state_size = #current_state
 -- do a few seeded timesteps
 local seed_text = opt.primetext
 if string.len(seed_text) > 0 then
-    gprint('seeding with ' .. seed_text)
-    gprint('--------------------------')
+    --gprint('seeding with ' .. seed_text)
+    --gprint('--------------------------')
     for c in seed_text:gmatch'.' do
         prev_char = torch.Tensor{vocab[c]}
         io.write(ivocab[prev_char[1]])
